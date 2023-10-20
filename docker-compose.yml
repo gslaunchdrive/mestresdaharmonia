@@ -21,9 +21,9 @@ services:
         done
         
     volumes:
-      - staticsite:/app/mestresdaharmonia
+      - staticmestre:/app/mestresdaharmonia
     networks:
-      - sites
+      - mestresdaharmonia
 
   nginx:
     image: docker.io/bitnami/nginx:1.25.2-debian-11-r37
@@ -35,7 +35,7 @@ services:
     depends_on:
       - git-repo-syncer
     volumes:
-      - staticsite:/app/ 
+      - staticmestre:/app/ 
     labels:
        - "traefik.enable=true"
        #SSL
@@ -44,11 +44,11 @@ services:
        - "traefik.http.routers.sites.entrypoints=web,websecure"
        - "traefik.http.routers.sites.tls.certresolver=leresolver"
     networks:
-      - sites
+      - mestresdaharmonia
 
 volumes:
-  staticsite:
+  staticmestre:
 
 networks:
-  sites:
+  mestresdaharmonia:
     external: true
