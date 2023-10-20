@@ -1,0 +1,54 @@
+version: '3'
+
+services:
+  git-repo-syncer:
+    image: docker.io/bitnami/git:2.42.0-debian-11-r45
+    environment:
+      - BITNAMI_DEBUG=true
+    command:
+      - /bin/bash
+      - -ec
+      - |
+        while true; do
+          mkdir fake
+          cd fake
+          git clone https://github.com/gslaunchdrive/mestresdaharmonia.git
+          cd mestresdaharmonia
+          cp -Rf . /app/mestresdaharmonia
+          cd /
+          rm -rf fake
+          sleep 300
+        done
+        
+    volumes:
+      - staticsite:/app/mestresdaharmonia
+    networks:
+      - sites
+
+  nginx:
+    image: docker.io/bitnami/nginx:1.25.2-debian-11-r37
+    environment:
+      - BITNAMI_DEBUG=true
+      - NGINX_HTTP_PORT_NUMBER=8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - git-repo-syncer
+    volumes:
+      - staticsite:/app/ 
+    labels:
+       - "traefik.enable=true"
+       #SSL
+       #Troque pelo seu dominio
+       - "traefik.http.routers.sites.rule=Host(`imersao.mestresdaharmonia.com.br`)"
+       - "traefik.http.routers.sites.entrypoints=web,websecure"
+       - "traefik.http.routers.sites.tls.certresolver=leresolver"
+    networks:
+      - sites
+
+volumes:
+  staticsite:
+
+networks:
+  sites:
+    external: true
