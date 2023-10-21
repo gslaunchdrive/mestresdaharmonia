@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  nginx:
+    image: docker.io/bitnami/nginx:1.25.2-debian-11-r37
+    environment:
+      - BITNAMI_DEBUG=true
+      - NGINX_HTTP_PORT_NUMBER=8080
+    ports:
+      - "8080:8080"
+    labels:
+       - "traefik.enable=true"
+       #SSL
+       #Troque pelo seu dominio
+       - "traefik.http.routers.mestres.rule=Host(`mestresdaharmonia.com.br`)"
+       - "traefik.http.routers.mestres.entrypoints=web,websecure"
+       - "traefik.http.routers.mestres.tls.certresolver=leresolver"
+    networks:
+      - mestres
+
+networks:
+  mestres:
+    external: true
