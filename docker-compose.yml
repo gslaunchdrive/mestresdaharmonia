@@ -40,9 +40,9 @@ services:
        - "traefik.enable=true"
        #SSL
        #Troque pelo seu dominio
-       - "traefik.http.routers.sites.rule=Host(`imersao.mestresdaharmonia.com.br`)"
-       - "traefik.http.routers.sites.entrypoints=web,websecure"
-       - "traefik.http.routers.sites.tls.certresolver=leresolver"
+       - "traefik.http.routers.mestresdaharmonia.rule=Host(`imersao.mestresdaharmonia.com.br`)"
+       - "traefik.http.routers.mestresdaharmonia.entrypoints=web,websecure"
+       - "traefik.http.routers.mestresdaharmonia.tls.certresolver=leresolver"
     networks:
       - mestresdaharmonia
 
