@@ -183,7 +183,8 @@ button#_form_47_submit {
 #loadingOverlay2,
 #loadingOverlay3,
 #loadingOverlay4,
-#loadingOverlay5 {
+#loadingOverlay5,
+#loadingOverlay6  {
     position: absolute;
     top: 50%;
     left: 50%;

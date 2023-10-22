@@ -27,6 +27,23 @@ $(document).ready(function () {
     });
   });
 
+  $('#videoReharmonizacaoGilvanio').click(function () {
+    $('#loadingOverlay6').css('display', 'flex');
+
+    $(this).replaceWith('<iframe width="450" height="300" src="https://www.youtube.com/embed/8fgBwpMlW6s?autoplay=1" \
+             title="Rearmonizacao - Gilvanio Reação" frameborder="0" \
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" \
+             allowfullscreen></iframe>');
+
+    $('iframe').on('load', function () {
+      $('#loadingOverlay6').hide();
+    });
+  });
+
+  
+
+
+
   $('#videoDepoimentoPedro').click(function () {
     $('#loadingOverlay2').css('display', 'flex');
 
