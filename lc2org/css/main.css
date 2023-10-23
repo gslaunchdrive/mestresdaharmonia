@@ -27,8 +27,8 @@ button#_form_43_submit {
     padding: 20px 0px;
     overflow: hidden;
     width: 100%;
-    background-color: #313030;
-    /* background-image: url(../assets/wallpaper.webp); */
+    /* background-color: #313030; */
+    background-image: url(../assets/wallpaper.webp);
     background-attachment: fixed;
     background-size: cover;
     -moz-background-size: cover;
