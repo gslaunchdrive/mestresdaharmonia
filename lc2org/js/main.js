@@ -91,7 +91,7 @@ $(document).ready(function () {
     });
   });
 
-  $("#phone").mask("+00 (00) 0000-00009");
+  $("#phone").mask("(00) 0000-00009");
 
     $("#_form_43_submit").click(function() {
         var clean = $("#phone").val().replace(/\D/g, "");
