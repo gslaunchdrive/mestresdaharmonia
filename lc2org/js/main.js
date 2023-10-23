@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-
   $('#videoVendas').click(function () {
     $('#loadingOverlay').css('display', 'flex');
 
@@ -39,10 +38,6 @@ $(document).ready(function () {
       $('#loadingOverlay6').hide();
     });
   });
-
-  
-
-
 
   $('#videoDepoimentoPedro').click(function () {
     $('#loadingOverlay2').css('display', 'flex');
