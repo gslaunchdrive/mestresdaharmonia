@@ -1,7 +1,7 @@
 
 $(document).ready(function () {
 
-    let groupWhats = 'https://chat.whatsapp.com/KwTvroT47cdGVZbfDCgSVq';
+    let groupWhats = 'https://chat.whatsapp.com/KyxHepOFFSg2mNts1vZ404';
 
     function loadConfigs() {
         // $.get( "https://glcdn.githack.com/ddmlaunch/configs/-/raw/dominandoacordes/obrigado.json",  function( data ) {
