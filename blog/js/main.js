@@ -8,6 +8,8 @@ $(document).ready(function () {
 
             $.getJSON("./endpoint_base.json", function() {
                 console.log("chamou!");
+                console.log(data);
+
                 // alert("Script loaded and executed.");
                 localStorage.setItem("data", data);
             setTimeout(
