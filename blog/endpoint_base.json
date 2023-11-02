@@ -2,9 +2,9 @@
     "aulas": [
         {
             "id": 1,
-            "title": "A Grande Promessa",
+            "title": "Seu conhecimento sobre acordes está em perigo",
             "date": "2023-11-02T11:30:00Z",
-            "label": "03/12 às 20h",
+            "label": "06/12 às 08h",
             "video": "d1f1Zt5ZOrY",
             "description": "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
             "textShare": "Cara estou participando de um evento sensacional, você deveria dar uma olhada!",
@@ -12,9 +12,9 @@
         },
         {
             "id": 2,
-            "title": "Você Também Pode",
-            "date": "2023-11-02T12:25:00Z",
-            "label": "14/12 às 20h",
+            "title": "Você tem que estudar pouco tempo",
+            "date": "2023-11-02T13:30:00Z",
+            "label": "08/10 às 8h",
             "video": "dTz0F7QA8AU",
             "description": "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
             "textShare": "Cara estou participando de um evento sensacional, você deveria dar uma olhada!",
@@ -22,9 +22,9 @@
         },
         {
             "id": 3,
-            "title": "Primeiro passo para o Sucesso",
-            "date": "2023-11-03T12:25:00Z",
-            "label": "25/12 às 20h",
+            "title": "5 Passos para dominar o universo dos acordes",
+            "date": "2023-11-10T12:25:00Z",
+            "label": "10/11 às 8h",
             "video": "-RH-lM2BMcQ",
             "description": "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
             "textShare": "Cara estou participando de um evento sensacional, você deveria dar uma olhada!",
@@ -35,10 +35,10 @@
         "comunity": "https://www.facebook.com/academiadoliquor",
         "whatsapp": "https://chat.whatsapp.com/DBrL8RaXg4HJTHoLmSJ1QP",
         "interested": {
-            "date": "2022-12-17T23:59:59Z",
+            "date": "2022-11-09T23:59:59Z",
             "whatsapp": "https://chat.whatsapp.com/DBrL8RaXg4HJTHoLmSJ1QP"
         },
         "sharedLink": "https://chat.whatsapp.com/DBrL8RaXg4HJTHoLmSJ1QP?send=",
-        "endEvent": "2022-12-31T23:59:59Z"
+        "endEvent": "2022-11-11T23:59:59Z"
     }
 }
