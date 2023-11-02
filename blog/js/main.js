@@ -6,7 +6,8 @@ $(document).ready(function () {
     function requestEnvs() {
         // $.get( "https://raw.githubusercontent.com/gslaunchdrive/configs/master/blog.json", function( data ) {
 
-            $.getJSON("endpoint_base.json", function() {
+            $.getJSON("./endpoint_base.json", function() {
+                console.log("chamou!");
                 // alert("Script loaded and executed.");
                 localStorage.setItem("data", data);
             setTimeout(
