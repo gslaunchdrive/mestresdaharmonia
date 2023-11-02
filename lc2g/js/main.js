@@ -94,7 +94,7 @@ $(document).ready(function () {
 
   $("#phone").mask("(00) 0000-00009");
 
-    $("#_form_45_submit").click(function() {
+    $("#_form_47_submit").click(function() {
         var clean = $("#phone").val().replace(/\D/g, "");
         $("#phone").val(clean);
         dataLayer.push({
