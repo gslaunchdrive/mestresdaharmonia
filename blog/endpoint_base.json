@@ -3,8 +3,8 @@
         {
             "id": 1,
             "title": "Seu conhecimento sobre acordes está em perigo",
-            "date": "2023-11-02T11:30:00Z",
-            "label": "06/12 às 08h",
+            "date": "2023-11-02T19:00:00Z",
+            "label": "06/12 às 19h",
             "video": "d1f1Zt5ZOrY",
             "description": "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
             "textShare": "Cara estou participando de um evento sensacional, você deveria dar uma olhada!",
@@ -13,8 +13,8 @@
         {
             "id": 2,
             "title": "Você tem que estudar pouco tempo",
-            "date": "2023-11-02T13:30:00Z",
-            "label": "08/10 às 8h",
+            "date": "2023-11-08T15:20:00Z",
+            "label": "08/11 às 19h",
             "video": "dTz0F7QA8AU",
             "description": "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
             "textShare": "Cara estou participando de um evento sensacional, você deveria dar uma olhada!",
@@ -23,8 +23,8 @@
         {
             "id": 3,
             "title": "5 Passos para dominar o universo dos acordes",
-            "date": "2023-11-10T12:25:00Z",
-            "label": "10/11 às 8h",
+            "date": "2023-11-10T19:00:00Z",
+            "label": "10/11 às 19h",
             "video": "-RH-lM2BMcQ",
             "description": "Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.",
             "textShare": "Cara estou participando de um evento sensacional, você deveria dar uma olhada!",
@@ -35,10 +35,10 @@
         "comunity": "https://www.facebook.com/academiadoliquor",
         "whatsapp": "https://chat.whatsapp.com/DBrL8RaXg4HJTHoLmSJ1QP",
         "interested": {
-            "date": "2022-11-09T23:59:59Z",
+            "date": "2023-11-09T23:59:59Z",
             "whatsapp": "https://chat.whatsapp.com/DBrL8RaXg4HJTHoLmSJ1QP"
         },
         "sharedLink": "https://chat.whatsapp.com/DBrL8RaXg4HJTHoLmSJ1QP?send=",
-        "endEvent": "2022-11-11T23:59:59Z"
+        "endEvent": "2023-11-11T23:59:59Z"
     }
 }
