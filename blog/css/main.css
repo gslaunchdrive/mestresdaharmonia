@@ -260,8 +260,7 @@ body {
         padding: 0 5px !important;
     }
     .box .imgbox {
-        top: 15px !important;
-        margin: -20px !important;
+        top: 10px !important;
     }
     #clock > div {
         width: 90px !important;
