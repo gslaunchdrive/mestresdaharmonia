@@ -58,7 +58,7 @@ $(document).ready(function () {
                 function () {
                     removeParamAuth();
                 },
-                2000);
+                3000);
 
         }
     }
