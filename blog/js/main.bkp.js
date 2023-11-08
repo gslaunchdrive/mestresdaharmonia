@@ -4,18 +4,15 @@ $(document).ready(function () {
     const myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'))
 
     function requestEnvs() {
-        
-        // $.get( "https://demo7060234.mockable.io/teste", function( data ) {
         // $.get( "https://imersao.mestresdaharmonia.com.br/blog/endpoint_base.json", function( data ) {
         $.get("./endpoint_base.json", function (data) {
-            var json = JSON.stringify(data);    
-            localStorage.setItem("data", json);
-            localStorage.setItem("att", new Date());
 
-            // setTimeout(
-                // function () {
+            var json = JSON.stringify(data);
+            localStorage.setItem("data", json);
+            setTimeout(
+                function () {
                     location.reload();
-                // }, 3000);
+                }, 2000);
         });
     }
 
@@ -68,23 +65,13 @@ $(document).ready(function () {
 
     function loadConfigs() {
 
-        // var teste = new Date();
-        // teste.setDate(teste.getDate() - 1);
-        // localStorage.setItem("att", teste);
-
-        if (!localStorage.getItem("att")) {    
-            myModal.show();
-            requestEnvs();
-        } else {     
-            var timeRemaining = getTimeRemaining(localStorage.getItem("att"));
-            console.log(timeRemaining);
-            if (timeRemaining.total < -100000) {
-                localStorage.removeItem("data");
+        if (typeof (Storage) !== "undefined") {
+            if (!localStorage.getItem("data")) {
                 myModal.show();
-                requestEnvs();
-            } else {
-                myModal.hide();
+                requestEnvs()
             }
+        } else {
+            alert("Desculpe! Navegador incompatível. Tente atualizá-lo. Caso não consiga, entre em contato com o suporte.")
         }
 
         reloadLocalStorage();
